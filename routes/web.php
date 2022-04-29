@@ -14,14 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('menu');
-});
-Route::get('/dasboard', function () {
     return view('dasboard');
 });
+
+Route::get('/menu', function () {
+    return view('menu');
+});
+
 Route::get('/shopp', function () {
     return view('shopping');
 });
+
 Route::get('/profil', function () {
     return view('profil');
 });
